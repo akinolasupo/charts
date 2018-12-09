@@ -1,39 +1,23 @@
 dependencies:
 - name: elasticsearch
   version: ^1.10.0
-  repository: https://kubernetes-charts.storage.googleapis.com/
+  repository: https://github.com/akinolasupo/charts.git
 - name: kibana
   version: ^0.16.0
-  repository: https://kubernetes-charts.storage.googleapis.com/
-- name: filebeat
-  version: ^1.0.0
-  repository: https://kubernetes-charts.storage.googleapis.com/
-  condition: filebeat.enabled
-- name: logstash
-  version: ^1.2.1
-  repository: https://kubernetes-charts.storage.googleapis.com/
-  condition: logstash.enabled
-- name: fluentd
-  version: ^1.0.0
-  repository: https://kubernetes-charts.storage.googleapis.com/
-  condition: fluentd.enabled
-- name: fluent-bit
-  version: ^0.13.0
-  repository: https://kubernetes-charts.storage.googleapis.com/
-  condition: fluent-bit.enabled
-- name: fluentd-elasticsearch
-  version: ^1.0.0
-  repository: https://kubernetes-charts.storage.googleapis.com/
-  condition: fluentd-elasticsearch.enabled
+  repository: https://github.com/akinolasupo/charts.git
+- name: kafka
+  version: ^0.13.2
+  repository: https://github.com/akinolasupo/charts.git
+  condition: kafka.enabled
 - name: nginx-ldapauth-proxy
   version: ^0.1.0
-  repository: https://kubernetes-charts.storage.googleapis.com/
+  repository: https://github.com/akinolasupo/charts.git
   condition: nginx-ldapauth-proxy.enabled
 - name: elasticsearch-curator
   version: ^1.0.0
-  repository: https://kubernetes-charts.storage.googleapis.com/
+  repository: https://github.com/akinolasupo/charts.git
   condition: elasticsearch-curator.enabled
 - name: elasticsearch-exporter
   version: ^0.4.0
-  repository: https://kubernetes-charts.storage.googleapis.com/
+  repository: https://github.com/akinolasupo/charts.git
   condition: elasticsearch-exporter.enabled
